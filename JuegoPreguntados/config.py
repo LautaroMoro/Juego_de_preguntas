@@ -28,7 +28,6 @@ tema_random = None
 RUTA_LOGO = ruta_recurso("Game_assets/imagenes/LogoJuegoPreguntas.png")
 RUTA_FONDO_PREGUNTAS = ruta_recurso("Game_assets/imagenes/fondoPreguntados.png")
 RUTA_PREGUNTAS_JSON = ruta_recurso("preguntas_juego.json")
-RUTA_RANKING_CSV = ruta_recurso("ranking.csv")
 RUTA_FONDO_OPCIONES = ruta_recurso("Game_assets/imagenes/fondo_pantalla_opciones.png")
 RUTA_FONDO_MINI_MENU = ruta_recurso("Game_assets/imagenes/imagen_para_mini_menu.jpg")
 RUTA_FONDO_RANKING = ruta_recurso("Game_assets/imagenes/imagen_para_ranking.jpg")
