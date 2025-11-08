@@ -12,9 +12,8 @@ __pycache__/
 *.db
 
 # Archivos de build y distribución
-Juego_de_preguntas/JuegoPreguntados/build/
-Juego_de_preguntas/JuegoPreguntados/dist/
-/JuegoPreguntados/main.spec
+build/
+dist/
 # Base de datos local
 Juego_de_preguntas/juego_preguntados.db
 
