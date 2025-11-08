@@ -1,2 +1,27 @@
-# Ignore the main.spec file
-/main.spec
+# Entorno virtual
+venv/
+.venv/
+
+# Archivos de compilación o temporales
+JuegoPreguntados/__pycache__/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.spec
+*.db
+
+# Archivos de build y distribución
+build/
+dist/
+# Base de datos local
+Juego_de_preguntas/juego_preguntados.db
+
+# Configuraciones del editor o sistema
+*.log
+*.env
+.DS_Store
+Thumbs.db
+
+# Archivos de VS Code
+.vscode/

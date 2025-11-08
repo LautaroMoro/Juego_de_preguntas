@@ -4,6 +4,7 @@ import random
 from config import *
 from colores import *
 from funciones_generales import *
+from base_datos import obtener_top10_bdd
 pygame.init()
 pygame.mixer.init()
 def mostrar_pantalla_ingreso_nombre(pantalla):
@@ -186,10 +187,9 @@ def mostrar_pantalla_opciones(pantalla, fuente, nombre):
                             print(f"puntuacion final: {puntuacion}")
                             flag_correr = False
 
-
         if tiempo_restante <= 0:
             vidas -= 1
-            guardar_ranking("ranking.csv", puntuacion, nombre)
+            guardar_ranking("ranking.csv", puntuacion, nombre, duracion_partida)
             print("Se te acabó el tiempo.")
             if vidas > 0:
                 tema_random = seleccionar_categoria(categorias)
@@ -205,7 +205,7 @@ def mostrar_pantalla_opciones(pantalla, fuente, nombre):
     tiempo_final = pygame.time.get_ticks()
     duracion_partida = (tiempo_final - tiempo_inicial) / 1000
     print(f"La partida duró: {duracion_partida:.2f} segundos")
-    guardar_ranking("ranking.csv", puntuacion, nombre, duracion_partida)
-    guardar_estadisticas_preguntas_realizadas_csv()
+    guardar_ranking("ranking.csv", puntuacion, nombre, duracion_partida=duracion_partida)
+    guardar_estadisticas_preguntas_bdd(estadisticas_preguntas)
     return puntuacion
 
